@@ -1,0 +1,79 @@
+@import url(master.css);
+.card {
+  padding: 20px;
+}
+
+.card .card-header,
+.card .cards-body,
+.card .card-footer {
+  padding: 0px;
+}
+.card .card-header .type {
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.card .card-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  border: 8px solid var(--black);
+  outline: 3px solid var(--Vivid-Vermilion);
+  background-color: var(--Vivid-Vermilion);
+}
+.cost {
+  font-size: 3rem;
+  opacity: 0.5;
+  text-transform: uppercase;
+}
+sup {
+  font-size: 1.5rem;
+}
+.card .cards-body {
+  border: none;
+}
+
+.card .cards-body ul {
+  width: 100%;
+}
+.card .cards-body ul li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  padding-block: 20px;
+}
+.help {
+  margin-left: auto;
+  opacity: 0.5;
+  cursor: pointer;
+}
+.card .cards-body ul li .fa-check {
+  color: green;
+}
+.card .cards-body ul li .fa-xmark {
+  color: red;
+}
+.card .cards-footer {
+  padding-top: 20px;
+  justify-content: start;
+}
+
+.card:nth-child(2) .card-header {
+  outline: 3px solid var(--Venetian-Red);
+  background-color: var(--Venetian-Red);
+  border: 8px solid var(--black);
+}
+.card:nth-child(3) .card-header {
+  outline: 3px solid var(--Crayola);
+  background-color: var(--Crayola);
+  border: 8px solid var(--black);
+}
+.card:nth-child(2) .button {
+  background-color: var(--Venetian-Red);
+}
+.card:nth-child(3) .button {
+  background-color: var(--Crayola);
+}

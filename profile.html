@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!-- <link rel="stylesheet" href="css/framework.css" /> -->
+    <link rel="stylesheet" href="css/master.css" />
+    <link rel="stylesheet" href="css/profile.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <title>Dashboard</title>
+</head>
+
+<body>
+    <div class="sidebar">
+        <h1 class="logo">Wiki</h1>
+        <ul class="menu">
+            <li>
+                <a href="INDEX.HTML">
+                    <i class="fa-solid fa-chart-bar"></i>
+                    <span class="value" class="text">Dashboard</span class="value">
+                </a>
+            </li>
+            <li>
+                <a href="setting.html">
+                    <i class="fa-solid fa-gear"></i>
+                    <span class="value" class="text">Setting</span class="value">
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa-solid fa-user"></i>
+                    <span class="value" class="text">Profile</span class="value">
+                </a>
+            </li>
+            <li>
+                <a href="Projects.html">
+                    <i class="fa-solid fa-diagram-project"></i>
+                    <span class="value" class="text">Projects</span class="value">
+                </a>
+            </li>
+            <li>
+                <a href="COURSES.HTML">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                    <span class="value" class="text">Courses</span class="value">
+                </a>
+            </li>
+            <li>
+                <a href="friends.html">
+                    <i class="fa-solid fa-user-group"></i>
+                    <span class="value" class="text">Friends</span class="value">
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa-solid fa-file"></i>
+                    <span class="value" class="text">Files</span class="value">
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa-solid fa-credit-card"></i>
+                    <span class="value" class="text">Plans</span class="value">
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="conitainer">
+        <header>
+            <div class="search-box">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" placeholder="Search..." />
+            </div>
+            <div class="actions">
+                <div class="bell"><i class="fa-solid fa-bell"></i></div>
+                <div class="user"><img src="image/Customer3.jpg" /></div>
+            </div>
+        </header>
+        <div class="content">
+            <h1 class="main-title">Profile</h1>
+            <div class="cards-container">
+                <div class="card">
+                    <div class="card-header">
+                        <div class="info">
+                            <div class="image">
+                                <img src="image/Customer3.jpg">
+                            </div>
+                            <p class="user-name">Hamsa Mansour
+                            </p>
+                            <p class="Level">Level 20</p>
+                            <div class="progress"></div>
+                            <div class="stars">
+                                <span class="fa-solid fa-star"></span>
+                                <span class="fa-solid fa-star"></span>
+                                <span class="fa-solid fa-star"></span>
+                                <span class="fa-regular fa-star"></span>
+                                <span class="fa-regular fa-star"></span>
+                            </div>
+                            <div class="rating">550 Rating</div>
+                        </div>
+                    </div>
+                    <div class="cards-body">
+                        <div class="box">
+                            <p class="title">General Information</p>
+                            <div class="info">
+                                <span>full Name:</span>
+                                <span>Hamsa Mansour</span>
+                            </div>
+                            <div class="info">
+                                <span>Gender:</span>
+                                <span>Female</span>
+                            </div>
+                            <div class="info">
+                                <span>
+                                    Country:</span>
+                                <span> Egypt</span>
+                            </div>
+                            <div class="action toggle">
+                                <input type="checkbox" name="General Information" id="General Information">
+                                <label for="General Information"></label>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <p class="title">Billing Information</p>
+                            <div class="info">
+                                <span>
+                                    Date Of Birth:</span>
+                                <span>16/9/2001</span>
+                            </div>
+                            <div class="info">
+                                <span>Email:</span>
+                                <span> o@nn.sa</span>
+                            </div>
+                            <div class="info">
+                                <span>Phone: </span>
+                                <span>01565487878</span>
+                            </div>
+                            <div class="action toggle">
+                                <input type="checkbox" name="Billing Information" id="Billing Information">
+                                <label for="Billing Information"></label>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <p class="title">Personal Information</p>
+                            <div class="info">
+                                <span>full Name:</span>
+                                <span>Hamsa Mansour</span>
+                            </div>
+                            <div class="info">
+                                <span>Gender:</span>
+                                <span>Female</span>
+                            </div>
+                            <div class="info">
+                                <span>
+                                    Country:</span>
+                                <span> Egypt</span>
+                            </div>
+                            <div class="action toggle">
+                                <input type="checkbox" name="Personal Information" id="Personal Information">
+                                <label for="Personal Information"></label>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <p class="title">Job Information</p>
+                            <div class="info">
+                                <span>Title:</span>
+                                <span> Full Stack Developer</span>
+                            </div>
+                            <div class="info">
+                                <span>Programming Language: </span>
+                                <span>Python</span>
+                            </div>
+                            <div class="info">
+                                <span>
+                                    Years Of Experience</span>
+                                <span>: 4+</span>
+                            </div>
+                            <div class="action toggle">
+                                <input type="checkbox" name="Job Information" id="Job Information">
+                                <label for="Job Information"></label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <div class="text">
+                            <h2 class="title-setting">My Skills</h2>
+                            <p class="descripation">Complete Skills List</p>
+                        </div>
+                    </div>
+                    <div class="cards-body">
+                        <div class="box">
+                            <p>HTML</p>
+                            <p>Pugjs</p>
+                            <p>HAML</p>
+                        </div>
+                        <div class="box">
+                            <p>CSS</p>
+                            <p>SASS</p>
+                            <p>Stylus</p>
+                        </div>
+                        <div class="box">
+                            <p>JavaScript</p>
+                            <p>TypeScript</p>
+                            <p>Vuejs</p>
+                        </div>
+                        <div class="box">
+                            <p>Reactjs</p>
+                            <p>Jasmine</p>
+                            <p>Jest</p>
+                        </div>
+                        <div class="box">
+                            <p>PHP</p>
+                            <p>Laravel</p>
+                            <p>HPython</p>
+                        </div>
+                        <div class="box">
+                            <p>Django</p>
+                            <p>Django</p>
+                            <p>HTML</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <div class="text">
+                            <h2 class="title-setting">Latest Activities</h2>
+                            <p class="descripation">Latest Activities Done By The User</p>
+                        </div>
+                    </div>
+                    <div class="cards-body">
+                        <div class="box">
+                            <div class="info">
+                                <div class="image">
+                                    <img src="image/activity-01.png">
+                                </div>
+                                <div class="text">
+                                    <p>
+                                        Store</p>
+                                    <p>Bought The Mastering Python Course</p>
+                                </div>
+                            </div>
+                            <div class="date">
+                                <p class="time">18:40</p>
+                                <p class="day">Sat</p>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="info">
+                                <div class="image">
+                                    <img src="image/activity-02.png">
+                                </div>
+                                <div class="text">
+                                    <p>
+                                        Academy</p>
+                                    <p>Got The PHP Certificate</p>
+                                </div>
+                            </div>
+                            <div class="date">
+                                <p class="time">16:05</p>
+                                <p class="day">Sat</p>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="info">
+                                <div class="image">
+                                    <img src="image/activity-03.png">
+                                </div>
+                                <div class="text">
+                                    <p>
+                                        Badges</p>
+                                    <p>Unlocked The 10 Skills Badge</p>
+                                </div>
+                            </div>
+                            <div class="date">
+                                <p class="time">18:40</p>
+                                <p class="day">Sat</p>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="info">
+                                <div class="image">
+                                    <img src="image/activity-01.png">
+                                </div>
+                                <div class="text">
+                                    <p>
+                                        Store</p>
+                                    <p>Bought The Mastering Python Course</p>
+                                </div>
+                            </div>
+                            <div class="date">
+                                <p class="time">18:40</p>
+                                <p class="day">Sat</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>

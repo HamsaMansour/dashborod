@@ -1,0 +1,259 @@
+.cards-body .box {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* gap: 5px; */
+}
+
+.Close-Message {
+  width: 100%;
+  border: 1px solid #ccc;
+  resize: none;
+  min-height: 150px;
+  background-color: transparent;
+  color: aliceblue;
+  padding: 5px;
+  height: 100%;
+}
+.cards-body .text {
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.descripation {
+  opacity: 0.5;
+}
+.card:nth-of-type(1) .box:nth-child(2) {
+  height: 100%;
+}
+/* card 2 */
+.card:nth-of-type(2) .cards-body .box {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 10px;
+}
+
+.card:nth-of-type(2) .cards-body .box input {
+  width: 100%;
+  padding: 10px;
+  background-color: transparent;
+  color: white;
+  font-size: 1rem;
+  border: 1px solid;
+}
+.card:nth-of-type(2) .cards-body .box .input-group {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  gap: 10px;
+  flex-direction: row;
+}
+.card:nth-of-type(2) .cards-body .box .input-group input {
+  background-color: var(--light-black);
+}
+/* .card:nth-of-type(2) .box:last-child .button{
+  background-color: transparent;
+  color: var(--Vivid-Vermilion) ;
+} */
+/* start card 4 */
+
+.card:nth-of-type(4) .cards-body .box {
+  justify-content: unset;
+  background-color: var(--light-black);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  font-size: 1.5rem;
+}
+.card:nth-of-type(4) .cards-body .box span {
+  padding: 5px;
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+  color: var(--grey-color);
+}
+
+.card:nth-of-type(4) .cards-body .box input {
+  width: 100%;
+  padding: 5px;
+  background-color: var(--light-black);
+  border: none;
+  border-left: 1px solid rgba(255, 255, 255, 0.2);
+  color: #ccc;
+  height: 100%;
+}
+.card:nth-of-type(4) .cards-body > .box:focus-within span {
+  color: rgb(249, 249, 249);
+}
+.card:nth-of-type(4) .cards-body .box input:focus-visible {
+  outline: none;
+}
+/* start card 5 */
+.card:nth-of-type(5) .cards-body .box {
+  justify-content: unset;
+  gap: 10px;
+}
+.card:nth-of-type(5) .cards-body .box input {
+  display: none;
+}
+
+.card:nth-of-type(5) .cards-body .box label {
+  position: relative;
+  padding-left: 30px;
+}
+
+.card:nth-of-type(5) .cards-body .box label::before,
+.card:nth-of-type(5) .cards-body .box label::after {
+  position: absolute;
+  left: 0px;
+  top: 10%;
+  width: 15px;
+  height: 15px;
+}
+.card:nth-of-type(5) .cards-body .box label::before {
+  content: "";
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  z-index: 1;
+  transform: translate(-1px, -1px);
+  -webkit-transform: translate(-1px, -1px);
+  -moz-transform: translate(-1px, -1px);
+  -ms-transform: translate(-1px, -1px);
+  -o-transform: translate(-1px, -1px);
+}
+.card:nth-of-type(5) .cards-body .box label::after {
+  background-color: blue;
+  font-family: var(--fa-style-family-classic);
+  content: "\f00c";
+  font-weight: 900;
+  font-size: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: scale(0) rotate(360deg);
+  -webkit-transform: scale(0) rotate(360deg);
+  -moz-transform: scale(0) rotate(360deg);
+  -ms-transform: scale(0) rotate(360deg);
+  -o-transform: scale(0) rotate(360deg);
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+.card:nth-of-type(5) .cards-body .box input:checked + label::after {
+  transform: scale(1) rotate(0deg);
+  -webkit-transform: scale(1) rotate(0deg);
+  -moz-transform: scale(1) rotate(0deg);
+  -ms-transform: scale(1) rotate(0deg);
+  -o-transform: scale(1) rotate(0deg);
+}
+/* start card 6 */
+.card:nth-of-type(6) .cards-body .Time,
+.location {
+  width: 100%;
+}
+.card:nth-of-type(6) .cards-body .Time {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+}
+.card:nth-of-type(6) .cards-body .box {
+  justify-content: unset;
+  font-size: 1.2rem;
+}
+.card:nth-of-type(6) .cards-body .box input {
+  display: none;
+}
+.card:nth-of-type(6) .cards-body .Time label {
+  /* padding-left: 25px; */
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+.card:nth-of-type(6) .cards-body .Time label .circle {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border: 2px solid var(--Vivid-Vermilion);
+}
+.card:nth-of-type(6) .cards-body .Time label .circle::after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  /*border: 2px solid rgba(255, 255, 255, 0.2);
+  */
+  background-color: var(--Vivid-Vermilion);
+  left: 50%;
+  top: 50%;
+  right: 0px;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  display: none;
+}
+
+.card:nth-of-type(6) .cards-body .location {
+  border-top: 2px solid rgba(255, 255, 255, 0.2);
+  display: flex;
+  width: 100%;
+  gap: 20px;
+  padding-top: 20px;
+}
+.card:nth-of-type(6) .cards-body .box input:checked + label .circle::after {
+  display: block;
+}
+.card:nth-of-type(6) .cards-body .location .box label {
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  padding: 20px;
+  background-color: var(--light-black);
+  width: 100%;
+  cursor: pointer;
+  opacity: 0.5;
+}
+.card:nth-of-type(6)
+  .cards-body
+  .location
+  .box:nth-of-type(1)
+  input:checked
+  + label {
+  border: 2px solid var(--Vivid-Vermilion);
+  opacity: 1;
+}
+.card:nth-of-type(6)
+  .cards-body
+  .location
+  .box:nth-of-type(2)
+  input:checked
+  + label {
+  border: 2px solid var(--Venetian-Red);
+  opacity: 1;
+}
+.card:nth-of-type(6)
+  .cards-body
+  .location
+  .box:nth-of-type(3)
+  input:checked
+  + label {
+  border: 2px solid var(--Crayola);
+  opacity: 1;
+}

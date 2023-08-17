@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!-- <link rel="stylesheet" href="css/framework.css" /> -->
+    <link rel="stylesheet" href="css/master.css" />
+    <link rel="stylesheet" href="css/setting.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <title>Dashboard</title>
+</head>
+
+<body>
+    <div class="sidebar">
+        <h1 class="logo">Wiki</h1>
+        <ul class="menu">
+            <li>
+                <a href="INDEX.HTML">
+                    <i class="fa-solid fa-chart-bar"></i>
+                    <span class="value" class="text">Dashboard</span class="value">
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa-solid fa-gear"></i>
+                    <span class="value" class="text">Setting</span class="value">
+                </a>
+            </li>
+            <li>
+                <a href="profile.html">
+                    <i class="fa-solid fa-user"></i>
+                    <span class="value" class="text">Profile</span class="value">
+                </a>
+            </li>
+            <li>
+                <a href="Projects.html">
+                    <i class="fa-solid fa-diagram-project"></i>
+                    <span class="value" class="text">Projects</span class="value">
+                </a>
+            </li>
+            <li>
+                <a href="COURSES.HTML">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                    <span class="value" class="text">Courses</span class="value">
+                </a>
+            </li>
+            <li>
+                <a href="friends.html">
+                    <i class="fa-solid fa-user-group"></i>
+                    <span class="value" class="text">Friends</span class="value">
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa-solid fa-file"></i>
+                    <span class="value" class="text">Files</span class="value">
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa-solid fa-credit-card"></i>
+                    <span class="value" class="text">Plans</span class="value">
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="conitainer">
+        <header>
+            <div class="search-box">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" placeholder="Search..." />
+            </div>
+            <div class="actions">
+                <div class="bell"><i class="fa-solid fa-bell"></i></div>
+                <div class="user"><img src="image/Customer3.jpg" /></div>
+            </div>
+        </header>
+        <div class="content">
+            <h1 class="main-title">Setting</h1>
+            <div class="cards-container">
+                <div class="card">
+                    <div class="card-header">
+                        <div class="text">
+                            <h2 class="title-setting">Site Control</h2>
+                            <p class="descripation">Control The Website If There Is Maintenance</p>
+                        </div>
+                    </div>
+                    <div class="cards-body">
+                        <div class="box">
+                            <div class="text">
+                                <span>Website Control</span>
+                                <p class="descripation">Open/Close Website And Type The Reason</p>
+                            </div>
+                            <div class="actions toggle">
+                                <input type="checkbox" name="Website-control" id="Website-control">
+                                <label for="Website-control"></label>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <textarea class="Close-Message" placeholder="Close Message Content"></textarea>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <div class="text">
+                            <h2 class="title-setting">General Infol</h2>
+                            <p class="descripation">General Information About Your Account</p>
+                        </div>
+                    </div>
+                    <div class="cards-body">
+                        <div class="box">
+                            <label for="first-Name">first-Name</label>
+                            <input type="text" name="first-Name" id="test" placeholder="first-Name">
+                        </div>
+                        <div class="box">
+                            <label for="last-Name">last-Name</label>
+                            <input type="text" name="Last-Name" id="test" placeholder="Last-Name">
+                        </div>
+                        <div class="box">
+                            <label for="">Email</label>
+                            <div class="input-group">
+                                <input type="text" name="Email" id="test" disabled placeholder="name@example.com">
+                                <div class="action">
+                                    <a href="#" class="button">change</a>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <div class="text">
+                            <h2 class="title-setting">Security Info</h2>
+                            <p class="descripation">Security Information About Your Account</p>
+                        </div>
+                    </div>
+                    <div class="cards-body">
+                        <div class="box">
+                            <div class="text">
+                                <h4 class="title">Password</h4>
+                                <p class="descripation">Last Change On 25/10/2021</p>
+                            </div>
+                            <div class="action">
+                                <a href="#" class="button">change</a>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="text">
+                                <h4 class="title">Two-Factor Authentication</h4>
+                                <p class="descripation">Enable/Disable The Feature</p>
+                            </div>
+                            <div class="actions toggle">
+                                <input type="checkbox" name="Website-control" id="Two-Factor Authentication">
+                                <label for="Two-Factor Authentication"></label>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="text">
+                                <h4 class="title">Devices</h4>
+                                <p class="descripation">Check The Login Devices List</p>
+                            </div>
+                            <div class="action">
+                                <a href="#" class="button secondary-button">Devices</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <div class="text">
+                            <h2 class="title-setting">Social Info</h2>
+                            <p class="descripation">Social Media Information</p>
+                        </div>
+                    </div>
+                    <div class="cards-body">
+                        <div class="box">
+                            <span class="icon"><i class="fa-brands fa-twitter fa-fw"></i></span>
+                            <input type="text" name="twiiter username" placeholder="twiiter username">
+                        </div>
+                        <div class="box">
+                            <span class="icon"><i class="fa-brands fa-facebook-f fa-fw"></i></span>
+                            <input type="text" name="twiiter username" placeholder="facbook username">
+                        </div>
+                        <div class="box">
+                            <span class="icon"><i class="fa-brands fa-linkedin fa-fw"></i></span>
+                            <input type="text" name="twiiter username" placeholder="linkedin username">
+                        </div>
+                        <div class="box">
+                            <span class="icon"><i class="fa-brands fa-youtube fa-fw"></i> </span>
+                            <input type="text" name="twiiter username" placeholder="Youtube username">
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <div class="text">
+                            <h2 class="title-setting">Widgets Control</h2>
+                            <p class="descripation">Show/Hide Widgets</p>
+                        </div>
+                    </div>
+                    <div class="cards-body">
+                        <div class="box">
+                            <input type="checkbox" id="Quick-Draft" checked>
+                            <label for="Quick-Draft">Quick Draft</label>
+                        </div>
+                        <div class="box">
+                            <input type="checkbox" id="Tickets-Statistics" checked>
+                            <label for="Tickets-Statisticst">Tickets Statistics</label>
+                        </div>
+                        <div class="box">
+                            <input type="checkbox" id="Yearly-Targets" checked>
+                            <label for="Yearly-Targets">Yearly Targets</label>
+                        </div>
+                        <div class="box">
+                            <input type="checkbox" id="Latest-News" checked>
+                            <label for="Latest-News">Latest News</label>
+                        </div>
+                        <div class="box">
+                            <input type="checkbox" id="Latest-Tasks">
+                            <label for="Latest-Tasks">Latest Tasks</label>
+                        </div>
+                        <div class="box">
+                            <input type="checkbox" id="Top-Search-Items">
+                            <label for="Top-Search-Items">Top Search Items</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <div class="text">
+                            <h2 class="title-setting">Backup Manager</h2>
+                            <p class="descripation">Control Backup Time And Location</p>
+                        </div>
+                    </div>
+                    <div class="cards-body">
+                        <div class="Time">
+                            <div class="box">
+                                <input type="radio" name="Time" id="Daily" checked>
+                                <label for="Daily">
+                                    <div class="circle"></div>
+                                    Daily
+                                </label>
+                            </div>
+                            <div class="box">
+                                <input type="radio"  name="Time" id="Weekly">
+                                <label for="Weekly">
+                                    <div class="circle"></div>
+                                    Weekly
+                                </label>
+                            </div>
+                            <div class="box">
+                                <input type="radio" name="Time" id="Monthly">
+                                <label for="Monthly">
+                                    <div class="circle"></div>
+                                    Monthly
+                                </label>
+                            </div>
+                        </div>
+                        <div class="location">
+                            <div class="box">
+                                <input type="radio" id="Megaman" name="location">
+                                <label for="Megaman">
+                                    <div class="icon"><i class="fa-solid fa-server"></i></div>
+                                    <p>Megaman </p>
+                                </label>
+                            </div>
+                            <div class="box">
+                                <input type="radio" id="Zero" name="location">
+                                <label for="Zero">
+                                    <div class="icon"><i class="fa-solid fa-server"></i></div>
+                                    <p>Zero</p>
+                                </label>
+                            </div>
+                            <div class="box">
+                                <input type="radio" id="Sigma" name="location">
+                                <label for="Sigma">
+                                    <div class="icon"><i class="fa-solid fa-server"></i></div>
+                                    <p>Sigma</p>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

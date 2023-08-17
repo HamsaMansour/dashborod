@@ -1,0 +1,101 @@
+@import url(master.css);
+.card .cards-body {
+  border: none;
+  position: relative;
+  border-bottom: 2px solid rgba(221, 214, 214, 0.267);
+}
+.cards-container {
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+}
+.card .card-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  position: relative;
+  padding: 50px;
+}
+
+.card .card-header .Friend {
+  width: 30%;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border: 2px solid white;
+}
+.card .card-header .name {
+  font-size: 1.5rem;
+}
+.card .card-header .Job {
+  opacity: 0.5;
+}
+.card .card-header .contact {
+  display: flex;
+  position: absolute;
+  top: 10px;
+  left: 15px;
+  gap: 10px;
+}
+
+.card .card-header .contact a {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  background-color: var(--black);
+  cursor: pointer;
+  transition: 0.7s;
+  -webkit-transition: 0.7s;
+  -moz-transition: 0.7s;
+  -ms-transition: 0.7s;
+  -o-transition: 0.7s;
+}
+.card .cards-body .box {
+  width: 100%;
+  display: flex;
+  gap: 10px;
+}
+
+.card .cards-body .VIP {
+  position: absolute;
+  font-size: 5rem;
+  letter-spacing: -2px;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  right: 20px;
+  top: 50%;
+  color: var(--Vivid-Vermilion);
+  font-weight: 400;
+  opacity: 0.2;
+}
+.card .card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+.action {
+  display: flex;
+  gap: 10px;
+}
+.date {
+  opacity: 0.5;
+  font-size: 0.9rem;
+}
+.card .card-header .contact a:hover {
+  background-color: var(--Vivid-Vermilion);
+}
+.action .button:last-child{
+  background-color: red;
+}

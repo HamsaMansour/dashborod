@@ -1,0 +1,172 @@
+@import url(master.css);
+.card:nth-child(1) {
+  flex-direction: row;
+  grid-column: 1 / -1;
+}
+.card:nth-child(1) .card-header .image {
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  overflow: hidden;
+  width: 60%;
+  border: 5px solid rgba(255, 255, 255, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card:nth-child(1) .card-header {
+  align-items: center;
+  text-align: center;
+}
+.card:nth-child(1) .card-header .info {
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+  display: flex;
+  justify-content: center;
+}
+.card:nth-child(1) .card-header .image img {
+  width: 100%;
+}
+
+.card:nth-child(1) .card-header .Level {
+  font-size: 1.2rem;
+  opacity: 0.5;
+}
+.card:nth-child(1) .card-header .user-name {
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+.card:nth-child(1) .card-header .progress {
+  background-color: var(--black);
+  position: relative;
+  width: 70%;
+  height: 5px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.card:nth-child(1) .card-header .progress::after {
+  content: "";
+  position: absolute;
+  width: 70%;
+  height: 5px;
+  background-color: var(--Vivid-Vermilion);
+  left: 0;
+  border-radius: 10px;
+}
+
+.card:nth-child(1) .card-header .stars {
+  color: var(--Crayola);
+}
+
+.card:nth-child(1) .card-header .rating {
+  font-size: 0.9rem;
+}
+.card:nth-child(1) .cards-body {
+  border: none;
+  border-left: 2px solid rgba(255, 255, 255, 0.2);
+  width: 100%;
+  padding: 0;
+}
+.card:nth-child(1) .cards-body .box {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 15px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 10px;
+  align-items: center;
+}
+.card:nth-child(1) .cards-body .title {
+  grid-column: 1 / -1;
+  opacity: 0.5;
+}
+
+.card:nth-child(1) .cards-body .box .info span:first-child {
+  opacity: 0.5;
+}
+.card:nth-child(1) .toggle label {
+  width: 5rem;
+  height: 20px;
+}
+.card:nth-child(1) .toggle label::before {
+  height: 20px;
+  width: 20px;
+}
+.card:nth-child(1) .cards-body .box:hover {
+  background-color: rgba(128, 128, 128, 0.336);
+}
+.card:nth-child(2) .cards-body .box {
+  width: 100%;
+  display: flex;
+  gap: 15px;
+  padding-block: 20px;
+}
+
+.card:nth-child(2) .cards-body .box p {
+  padding: 5px;
+  background-color: var(--light-black);
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+.card:nth-child(2) .cards-body .box:not(:last-child) {
+  border-bottom: 1px solid rgba(128, 128, 128, 0.336);
+}
+.card:nth-child(2) .cards-body {
+  padding-block: 0px;
+  gap: 0px;
+}
+/* start card 3  */
+.cards-container {
+  grid-template-columns: 1fr 2fr;
+}
+@media (max-width: 768px) {
+  .cards-container {
+    grid-template-columns: 1fr;
+  }
+}
+.card:nth-child(3) .cards-body .box{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding-block: 10px;
+}
+
+.card:nth-child(3) .cards-body .box .info .image{
+ width: 80px;
+}
+.card:nth-child(3) .cards-body .box .info{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.card:nth-child(3) .cards-body .box .info .image img{
+  width: 100%;
+}
+.card:nth-child(3) .cards-body .box .date{
+  text-align: end;
+}
+.card:nth-child(3) .cards-body .box:not(:last-of-type){
+  border-bottom: 1px solid rgba(128, 128, 128, 0.336) ;
+}
+
+.card:nth-child(3) .cards-body{
+  padding-block: 0px;
+  gap: 0px;
+  border: none;
+}
+.card:nth-child(3) .cards-body .box .info .text{
+  gap: 15px;
+  display: flex;
+  flex-direction: column;
+}
